@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre:wght@400;900&display=swap');
+
+body {
+    max-width: 1002px;
+    background: #E5E5E5;
+    margin: 0px auto;
+}
+
+a {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    line-height: 41px;
+    font-size: 32px;
+    font-weight: 900;   
+    text-align: center;
+}
+
+h1 { 
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+}
+
+
+/* ---- CONTACT ---- */
+
+.grid-container {
+    display: grid;
+    background: #C7DDEA;
+    background-image: url('../images/manbarn.png');
+    background-repeat: no-repeat;
+    background-position-y: 42px;
+    background-position-x: 730px;
+}
+
+.embedheader {
+    position: absolute;
+    top: 73px;
+    right: 180px;
+}
+
+.header {
+    text-align: center;
+    margin-top: 135px;
+    margin-bottom: 70px;
+}
+
+/* ---- NAVBAR ---- */
+.navbar {
+    background: #FFFFFF;;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 27px 167px;
+
+}
+
+.navbar a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.navbar > .current {
+    opacity: 1;
+}
+
+.woym {
+    background: #A9A19E;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.woym h1 {
+    color: white;
+    padding: 70px 80px;
+}
+
+.woym-forms {
+    max-width: 100%;
+}
+
+.woym form {
+    display: grid;
+    padding-top: 110px;
+    padding-bottom: 90px;
+}
+
+/* ---- INPUT FORMS ---- */
+input[type=submit] {
+    padding-bottom: 184;
+    background: white;
+    border-radius: 100px;
+    border: none;
+    padding: 12px 23px;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+    width: 131px;
+    margin-left: 210px;
+    
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: flex-start;
+
+}
+
+textarea {
+    width: 60%;
+    padding: 18px 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: flex-start;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    line-height: 100%;
+}
+
+label {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: white;
+    opacity: 0.7;
+}
+
+/* ---- KARTA CSS ---- */
+
+.kartbox {
+    position: relative;
+    background-color: greenyellow;
+    width: auto;
+    height: 407px;
+    background-image: url(../images/karta.svg);
+}
+.gulruta {
+    position: absolute;
+    background-color: #FAB131;
+    width: 323px;
+    height: 206px;
+    margin-left: 86px;
+    margin-top: 50px;
+}
+p.comevisit {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 22px;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+.address {
+    position: absolute;
+    width: 277px;
+    height: 76px;
+    margin-top: 69px;
+    margin-left: 23px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.locationmark {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 370px;
+    margin-bottom: 135px;
+    margin-right: 466px;
+}
+/* ---- GRÅ BOX LÄNGST NER ---- */
+.greybox {
+    background: #777574;
+    width: 1002px;
+    height: 340px;
+}

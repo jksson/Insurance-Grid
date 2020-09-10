@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Frank+Ruhl+Libre:wght@400;900&display=swap');
+
+body {
+    max-width: 1002px;
+    background: #E5E5E5;
+    margin: 0px auto;
+}
+
+p, a {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Frank Ruhl Libre', serif;
+    line-height: 41px;
+    font-size: 32px;
+    text-align: center;
+}
+
+h1 { 
+    font-family: 'Frank Ruhl Libre';
+    font-size: 45px;
+    line-height: 100%;
+}
+
+/* ---- FÖRSTA GRID-YTAN ---- */
+.grid-top {
+    display: grid; 
+    grid-template: 
+    'family learnmore'
+    'family joinnow';
+    grid-auto-columns: minmax(290px, 1fr);
+}
+
+/* ---- WE GOT YOU COVERED ---- */ 
+.family {
+    grid-area: family;
+    background: #C7DDEA;
+    padding-left: 105px;
+    padding-top: 75px;
+    background-image: url('../images/familj.png');
+    background-repeat: no-repeat;
+    background-position-x: 200px;
+    background-position-y: 272px;
+    
+}
+
+.family a {
+    background: white;
+    border-radius: 100px;
+    padding: 0.84rem 2.713rem;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.family-text h1 {
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.family-text p {
+    color: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    max-width: 260px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+/* <span class="wite"> för att göra del av text vit*/
+.white {
+    color: white;
+}
+
+/* ---- LEARN MORE ---- */ 
+.learnmore {
+    padding-bottom: 100px;
+    grid-area: learnmore;
+    background: #F17949;
+}
+
+
+.learnmore p, .joinnow p {
+    text-align: center;
+    margin: 112px auto 0 auto;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.learnmore h2, .joinnow h2 {
+    margin: 0;
+    padding-top: 5px;
+    color: #FFFFFF;
+}
+
+
+
+/* ---- JOIN TODAY ---- */ 
+.joinnow {
+    grid-area: joinnow;
+    background: #FAB131;
+    padding-bottom: 100px;
+}
+
+
+
+/* ---- NAVBAR ---- */
+.navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 27px 167px;
+}
+
+.navbar a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.navbar > .current {
+    opacity: 1;
+}
+
+
+/* ---- FINANCIAL SAFETY ---- */
+.finsafety {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #A9A19E;
+    padding-bottom: 185px;
+}
+
+.join h1 {
+    font-size: 45px;
+}
+
+.safety { 
+    color: white;
+    font-family: 'Frank Ruhl Libre';
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    padding-left: 100px;
+    padding-top: 100px;
+    margin: 0;
+}
+
+.greylorem {
+    font-family: 'Fira Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 105px;
+}
+.flex-container {
+    display: flex;
+    width: 131px;
+    margin-left: 100px;
+    margin-top: 290px;
+}
+.flex-container a {
+    align-self: flex-end;
+    cursor: pointer;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1);
+}
+a.click {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    transition: all 300ms;
+    text-decoration: none;
+    line-height: 12px;
+    font-size: 10px;
+    font-family: Fira Sans;
+    font-weight: bold;
+    padding: 15px 40px;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+/* GRID MED TRE KORT */
+.box1a {
+    position: absolute;
+    border-radius: 5px;
+    top: 450px;
+    left: 80px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 256px;
+    height: 308px;
+}
+.box1b {
+    position: absolute;
+    border-radius: 5px;
+    top: 420px;
+    left: 90px;
+    background: #C7DDEA;
+    width: 236px;
+    height: 150px;
+}
+p.children {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+    font-family: 'Frank Ruhl Libre';
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+p.children-text {
+    position: absolute;
+    width: 214px;
+    height: 108px;
+    left: 20px;
+    bottom: 20px;
+    font-family: Fira Sans;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+.box2a {
+    position: absolute;
+    border-radius: 5px;
+    top: 450px;
+    left: 370px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 256px;
+    height: 308px;
+}
+.box2b {
+    position: absolute;
+    border-radius: 5px;
+    top: 420px;
+    left: 380px;
+    background: #FAB131;
+    width: 236px;
+    height: 150px;
+}
+p.justright {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+    font-family: Frank Ruhl Libre;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+p.justright-text {
+    position: absolute;
+    width: 214px;
+    height: 108px;
+    left: 20px;
+    bottom: 20px;
+    font-family: Fira Sans;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+.box3a {
+    position: absolute;
+    border-radius: 5px;
+    top: 450px;
+    left: 660px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 256px;
+    height: 308px;
+}
+.box3b {
+    position: absolute;
+    border-radius: 5px;
+    top: 420px;
+    left: 670px;
+    background: #F17949;
+    width: 236px;
+    height: 150px;
+}
+p.oldfart {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+    font-family: Frank Ruhl Libre;
+    
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+p.oldfart-text {
+    position: absolute;
+    width: 214px;
+    height: 108px;
+    left: 20px;
+    bottom: 20px;
+    font-family: Fira Sans;
+    
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+.children-img {
+    padding-left: 70px;
+}
+.justright-img {
+    padding-left: 60px;
+}
+.oldfart-img {
+    padding-left: 50px;
+}
+
+
+/* ---- ABOUT US ---- */ 
+.about {
+    margin-top: 200px;
+    color: white;
+    font-family: Frank Ruhl Libre;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+}
+
+.aboutus {
+    display: grid;
+    grid-template-rows: auto;
+    background: #FAB131;
+    justify-content: center;
+    height: 680px;
+}
+.aboutus h1, p {
+    max-width: 442px;
+    text-align: center;
+}
+
+p.about-text {
+    display: flex;
+    margin-bottom: 100px;
+    width: 442px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+/* ---- HOW IT WORKS ---- */
+.hiw {
+    background: white;
+    display: grid;
+    grid-template:
+    'ruta1 ruta2 ruta3'
+    'ruta4 ruta5 ruta6';
+    grid-auto-columns: minmax(100px, 1fr);
+    /* max-height: 680px; */
+}
+
+.ruta1 {
+    background: #C7DDEA;
+}
+
+.ruta1 h1 {
+    letter-spacing: -0.02em;
+    margin: 0 auto;
+}
+
+.ruta1 article {
+    line-height: 0px;
+    text-align: center;
+    padding: 125px 0;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.number {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px;
+}
+
+.number h2 {
+    margin: 0;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.4);
+    letter-spacing: -0.02em;
+}
+
+.ruta2 p, .ruta3 p, .ruta4 p, .ruta5 p, .ruta6 p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 35px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.ruta3 {
+    background: #EBEBEB;
+}
+
+.ruta4 {
+    /* height: 340px; */
+    padding-bottom: 147px;
+}
+
+.ruta5 {
+    background: #F17949;
+}
+
+
+/* ---- TAKE ME UP AGAIN ---- */
+.nav-up {
+    background: #A9A19E;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.nav-up a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+
+/* ---- FOOTER ---- */
+footer {
+    padding: 170px;
+    background: #777574;
+}
